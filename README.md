@@ -16,8 +16,15 @@ Suban el contenido de esta carpeta a la rama/repositorio del sitio. En GitHub, a
 ## Archivos
 
 - `index.html`: contenido y estructura.
+- `proyectos.html`: página aparte para el portafolio de proyectos.
+- `projects-data.js`: lista editable de proyectos para la galería.
+- `projects-page.js`: tarjetas, etiquetas y filtros de la galería.
 - `styles.css`: identidad visual, diseño adaptable y animaciones.
 - `script.js`: menú móvil, año automático y animaciones al entrar en pantalla.
 - `assets/`: logos compartidos por el equipo.
 
 El botón flotante alterna entre tema oscuro y claro y recuerda la elección en el navegador.
+
+## Agregar proyectos
+
+Editen `projects-data.js` y agreguen un objeto por cada trabajo que puedan mostrar. Incluyan nombre, categoría, año, descripción y tecnologías; `image` y `url` son opcionales. Guarden las imágenes en `assets/proyectos/` y usen una ruta relativa como `assets/proyectos/mi-proyecto.jpg`. La galería genera las tarjetas y filtros automáticamente. El portafolio inicia vacío para evitar presentar conceptos como trabajos reales.
