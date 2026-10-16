@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111110">
+  <meta name="description" content="Conoce los proyectos y soluciones digitales creados por PixCube.">
+  <title>Proyectos — PixCube®</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/pixcube-mark.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-projects">
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="wordmark" href="index.html" aria-label="PixCube, inicio"><img src="assets/pixcube-logo-horizontal.png" alt="PixCube — Tu idea, nuestro cubo, infinitas posibilidades"></a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i></button>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="index.html#servicios">Lo que hacemos</a><a href="proyectos.html" aria-current="page">Proyectos</a><a href="index.html#equipo">El equipo</a>
+      <a class="nav-cta" href="index.html#contacto">Hablemos <span>↗</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="projects-hero">
+      <p class="eyebrow"><span class="live-dot"></span> PIXCUBE® / PORTAFOLIO</p>
+      <h1>Ideas en<br><span class="outlined">acción<span class="lime">.</span></span></h1>
+      <p class="projects-lede">Diseño y desarrollo que convierten ideas en soluciones reales. Explora una selección del trabajo del equipo PixCube.</p>
+      <p class="projects-disclaimer">Las imágenes se adaptaron para presentar los proyectos y pueden diferir de la versión final. Algunas piezas fueron propuestas y no se publicaron.</p>
+      <a class="text-link" href="index.html#contacto">¿Tienes un reto para nosotros? <span>↗</span></a>
+      <div class="projects-decoration" aria-hidden="true"><div class="cube cube-main"><span></span><span></span><span></span><span></span></div><div class="cube cube-small"><span></span><span></span><span></span><span></span></div></div>
+    </section>
+    <section class="projects-catalog section-pad">
+      <div class="section-kicker"><span>01 / SELECCIÓN DE PROYECTOS</span><span id="project-count">PORTAFOLIO PIXCUBE</span></div>
+      <div class="projects-toolbar"><h2>Hecho con<br><span class="purple">intención.</span></h2><div class="project-filters" id="project-filters" aria-label="Filtrar proyectos"></div></div>
+      <div class="projects-grid" id="projects-grid" aria-live="polite"></div>
+      <div class="projects-empty" id="projects-empty" hidden>
+        <span class="empty-symbol">✳</span><p class="empty-kicker">EL SIGUIENTE PROYECTO PUEDE SER TUYO</p>
+        <h3>Estamos preparando<br>lo que viene.</h3>
+        <p class="empty-copy">Muy pronto verás aquí proyectos reales del equipo. Mientras tanto, cuéntanos qué te gustaría crear.</p>
+        <a class="contact-button" href="index.html#contacto">Hablemos de tu idea <span>↗</span></a>
+      </div>
+    </section>
+  <section class="projects-cta"><p class="eyebrow">¿LISTOS PARA EMPEZAR?</p><h2>Hagamos algo<br><span class="lime">que importe.</span></h2><a class="contact-button contact-button-whatsapp" href="https://wa.me/523350424678?text=Hola%20PixCube%2C%20quiero%20cotizar%20un%20proyecto." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp <span>↗</span></a></section>
+  </main>
+  <dialog class="project-modal" id="project-modal" aria-labelledby="project-modal-title">
+    <div class="project-modal-layout">
+      <div class="project-modal-media">
+        <img class="project-modal-image" src="" alt="">
+        <span class="project-modal-placeholder" aria-hidden="true">✳</span>
+        <button class="project-modal-arrow project-modal-prev" type="button" aria-label="Imagen anterior">←</button>
+        <button class="project-modal-arrow project-modal-next" type="button" aria-label="Imagen siguiente">→</button>
+        <span class="project-modal-counter"></span>
+      </div>
+      <div class="project-modal-content">
+        <button class="project-modal-close" type="button" aria-label="Cerrar detalles">×</button>
+        <p class="project-modal-category eyebrow"></p>
+        <h2 class="project-modal-title" id="project-modal-title"></h2>
+        <p class="project-modal-status"></p>
+        <p class="project-modal-description"></p>
+        <div class="project-modal-tags portfolio-tags"></div>
+        <a class="contact-button contact-button-whatsapp project-modal-contact" href="https://wa.me/523350424678?text=Hola%20PixCube%2C%20quiero%20saber%20m%C3%A1s%20sobre%20sus%20proyectos." target="_blank" rel="noopener noreferrer">Hablemos de tu idea <span>↗</span></a>
+      </div>
+    </div>
+  </dialog>
+  <footer class="footer"><a class="wordmark" href="index.html"><img src="assets/pixcube-logo-horizontal.png" alt="PixCube"></a><p>Hecho con intención <span class="lime">✳</span> en México.</p><div class="socials"><a href="https://instagram.com/pixcubeoficial" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="https://www.facebook.com/profile.php?id=61595142443809" target="_blank" rel="noopener noreferrer">FACEBOOK ↗</a></div><span class="copyright">© <span id="year">2026</span> PIXCUBE</span></footer>
+  <button class="theme-toggle" type="button" aria-label="Cambiar a tema claro" title="Cambiar tema"><span class="theme-icon" aria-hidden="true">☼</span><span class="theme-tooltip">Cambiar tema</span></button>
+  <a class="whatsapp-float" href="https://wa.me/523350424678?text=Hola%20PixCube%2C%20quiero%20cotizar%20un%20proyecto." target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp" title="Escríbenos por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5a9.5 9.5 0 0 0-8.1 14.45L2.6 21.4l4.58-1.2A9.5 9.5 0 1 0 12 2.5Z"/><path d="M8.4 7.8c.3-.6.6-.6.9-.6h.5c.2 0 .4 0 .5.4l.8 1.8c.1.3.1.5-.1.7l-.6.7c-.2.2-.2.4-.1.6.7 1.2 1.6 2.1 2.8 2.7.3.1.5.1.6-.1l.8-.9c.2-.2.4-.3.7-.2l1.7.8c.3.1.4.3.4.5 0 .3-.2 1.2-.7 1.6-.5.5-1.2.7-1.9.7-.5 0-1.2-.2-2-.5-2.8-1.1-4.6-3.8-4.8-4.1-.2-.3-1.1-1.5-1.1-2.9 0-1.3.7-2 1-2.2Z"/></svg></a>
+  <script src="script.js"></script>
+  <script src="projects-data.js"></script>
+  <script src="projects-page.js"></script>
+</body>
+</html>
